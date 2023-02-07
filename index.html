@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+  <title>ohmyfood</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compose your own menu and reduce waiting time in restaurants ">
+  <!--google-font/Shrikhand/Roboto Library-->
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
+    integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Custom style sheet-->
+  <link href="public/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- loader-->
+  <div class="home-page">
+    <div class="home-page__loader"><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+  <header>
+    <img src="public/images/logo/ohmyfood@2x.svg" alt="ohmyfood-logo" class="header__logo">
+  </header>
+  <form>
+    <div class="search">
+      <span class="search__icon fa-solid fa-location-dot map-icon"></span>
+      <span class="search__title">Paris, Belleville</span>
+    </div>
+  </form>
+  <section>
+    <div class="info__container">
+      <h3 class="info__header">Book the menu you like</h3>
+      <p class="info__byline">Discover top-of-the-art restaurants we picked for you</p>
+      <button class="info__button">Explore our restaurants</button>
+    </div>
+  </section>
+  <section class="filter">
+    <h3 class="filter__heading">How it works</h3>
+    <div class="filter__content">
+      <button>
+        <div class="filter__order">1</div>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <span class="filter_content">Chose a restaurant</span>
+      </button>
+      <button>
+        <div class="filter__order">2</div>
+        <i class="fa-solid fa fa-list"></i>
+        <span class="filter_content">Create your menu</span>
+      </button>
+      <button>
+        <div class="filter__order">3</div>
+        <i class="fa-solid fa-solid fa-store"></i>
+        <span class="filter_content">Go enjoy it at the restaurant</span>
+      </button>
+      </div>
+    </section>
+    <main>
+    <div class="resturant_list">
+      <h3>Restaurants</h3>
+      <ul class="resturant_card">
+        <li>
+          <div class="restaurant_image">
+            <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Auberge la Cannebiere">
+            <span class="restaurant_new_badge">New</span>
+            <div class="resturant_detail">
+              <span class="resturant_detail_text">
+                <h5>The Full Palette</h5>
+                <p>New York</p>
+              </span>
+              <div class="resturant_detail_saveicon">
+                <i class="fa-regular fa-heart empty_heart"></i>
+                 <i class="fa-solid fa-heart heart_hover"></i>
+               </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="restaurant_image">
+            <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Auberge la Cannebiere">
+            <span class="restaurant_new_badge">New</span>
+            <div class="resturant_detail">
+              <span class="resturant_detail_text">
+                <h5>The Enchanted Plate</h5>
+                <p>New York</p>
+              </span>
+              <div class="resturant_detail_saveicon">
+                <i class="fa-regular fa-heart empty_heart"></i>
+                 <i class="fa-solid fa-heart heart_hover"></i>
+               </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="restaurant_image">
+           <a href="menuscreen-3.html"><img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Auberge la Cannebiere"></a> 
+            <span class="restaurant_new_badge">New</span>
+            <div class="resturant_detail">
+              <span class="resturant_detail_text">
+                <h5>Bastille</h5>
+                <p>New York</p>
+              </span>
+              <div class="resturant_detail_saveicon">
+                <i class="fa-regular fa-heart empty_heart"></i>
+                 <i class="fa-solid fa-heart heart_hover"></i>
+               </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="restaurant_image">
+            <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Auberge la Cannebiere">
+            <span class="restaurant_new_badge">New</span>
+            <div class="resturant_detail">
+              <span class="resturant_detail_text">
+                <h5>Le Gourmand</h5>
+                <p>New York</p>
+              </span>
+              <div class="resturant_detail_saveicon">
+               <i class="fa-regular fa-heart empty_heart"></i>
+                <i class="fa-solid fa-heart heart_hover"></i>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

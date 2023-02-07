@@ -1,0 +1,24 @@
+// Import all .scss file to make single css
+
+@import "utils/_mixins.scss";
+@import "utils/_variables.scss";
+
+@import "base/_base.scss";
+@import "base/_typography.scss";
+
+@import "components/_buttons.scss";
+@import "components/_heart.scss";
+@import "components/_loader.scss";
+
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+
+@import "pages/_index.scss";
+@import "pages/_menu.scss";
+
+// cmd to convert .scss file to .css
+// 1"cmd -> sass sass/style.scss public/css/style.css
+
+// to watch changes in scss render on ::-webkit-progress-value
+
+// 2"cmd ->sass --watch sass/style.scss:public/css/style.css

@@ -1,0 +1,94 @@
+.search {
+    text-align: center;
+    background-color: $color-1;
+    box-shadow: inset 0 5px 3px -3px #c4c4c4;
+    padding: 15px;
+
+    &__title {
+        padding-left: 7px;
+        font-size: 12px;
+    }
+
+    &__icon {
+        font-size: 12px;
+    }
+}
+
+.info__container {
+    text-align: center;
+    background-color: $background-color;
+    padding: 32px 0px 64px 0px;
+
+    .info__header {
+        font-size: 25px;
+    }
+
+    .info__byline {
+        margin: 2.2em 2.1em;
+        font-weight: 300;
+    }
+
+    .info__button {
+        box-shadow: 0px 10px 20px 0 rgb(0 0 0 / 16%);
+        color: white;
+        background-color: $primary-text-color;
+        background-image: linear-gradient(175deg, $secondary-text-color, $primary-text-color);
+        border: none;
+        padding: 16px 24px;
+        border-radius: 50px;
+        font-size: 15px;
+
+        &:hover {
+            background-image: linear-gradient(to bottom, lighten($secondary-text-color, 5%),
+                    lighten($primary-text-color, 2%));
+            box-shadow: 0px 5px 15px 0 rgb(0 0 0 / 20%);
+        }
+    }
+}
+
+.filter {
+    margin: 30px 20px;
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__heading{
+        margin-bottom: 15px;
+    }
+    &__order {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: $primary-text-color;
+        color: #fff;
+        font-size: 9px;
+        width: 16px;
+        line-height: 16px;
+        border-radius: 50%;
+        text-align: center;
+        transform: translate(-50%, 100%);
+    }
+    & button {
+        min-width: 150px;
+        margin-bottom: 20px;
+        padding: 3px 0 16px;
+        display: inline-block;
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+
+        i {
+            float: left;
+            padding: 0px 20px
+        }
+
+        
+
+        .filter_content {
+            font-family: $primary-fontfamily;
+            float: left;
+        }
+
+    }
+}
