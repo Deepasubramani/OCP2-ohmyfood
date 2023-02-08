@@ -1,0 +1,35 @@
+.resturant__save-actions{
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+    .heart__save-action{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+        opacity:0;
+    }
+    &:focus, &:hover, &:active {
+        & .heart__unsave-action{
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        & .heart__save-action{
+            opacity:1;
+            transition: opacity 2s;
+        }
+    }
+    .far{
+        display: block;
+    }
+    .fas{
+        display: block;
+        background: linear-gradient();
+        background-clip: text;
+        background: -webkit-linear-gradient($primary-text-color,$secondary-text-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+}

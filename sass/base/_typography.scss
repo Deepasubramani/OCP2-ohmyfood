@@ -1,3 +1,24 @@
 body{
     font-family: $primary-fontfamily;
 }
+
+.info__header, .filter__heading, .container__heading{
+    font-size: 1.2rem;
+}
+.restaurant__byline, .restaurant__heading, .info__byline{
+    font-size: 1.1rem;
+}
+.restaurant__byline, .info__byline{
+    font-weight: 300;
+}
+.info__button, .search__title, .filter_content, filter li{
+    font-size: 1rem;
+}
+.filter__order{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.restaurant__byline{
+    line-height: 1.5;
+}
+

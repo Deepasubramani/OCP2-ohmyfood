@@ -1,15 +1,16 @@
-.home-page {
+.loader {
+  
   background: $footer-color;
   opacity: .6;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: fixed;
+   width: 100vw;
+    height: 100vh;
+    z-index: 1;
 }
 
 
 .home-page__loader {
+  
   display: inline-block;
   position: relative;
   top: 50%;
@@ -20,6 +21,8 @@
 }
 
 .home-page__loader div {
+  height: 100vh;
+  width:100vw;
   position: absolute;
   width: 6px;
   height: 6px;
@@ -113,7 +116,7 @@
     transform: scale(1.5);
   }
 }
-.home-page{
+.loader{
   animation: hideloader 0s 3s;
   animation-fill-mode:forwards ;
 }

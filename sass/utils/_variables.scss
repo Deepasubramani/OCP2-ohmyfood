@@ -2,8 +2,13 @@ $footer-color:#353535;
 $color-white:#fff;
 $color-1:#eaeaea;
 $background-color:#f6f6f6;
-$header-fontfamily: Shrikhand;
+$header-fontfamily: 'Shrikhand', cursive;
 $primary-fontfamily: 'Roboto', sans-serif;
 $primary-text-color: #9356DC;
 $secondary-text-color: #FF79DA;
 $Tertiary-text-color: #99E2D0;
+
+$breakpoints: (
+    medium: 600px,
+    large: 850px
+);

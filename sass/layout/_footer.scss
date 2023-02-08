@@ -1,0 +1,12 @@
+footer {
+    line-height: 1.6em;
+    background-color: #353535;
+    padding: 24px 0 24px 24px;
+    color: white;
+    font-family: $primary-fontfamily;
+    #footer__title{
+      font-family: $header-fontfamily;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+  }
