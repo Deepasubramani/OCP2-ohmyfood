@@ -1,6 +1,11 @@
 body{
     font-family: $primary-fontfamily;
 }
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: $footer-color;
+}
 
 .info__header, .filter__heading, .container__heading{
     font-size: 1.2rem;
