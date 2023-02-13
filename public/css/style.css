@@ -15,7 +15,7 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #353535;
+  color: #fff;
 }
 
 .info__header, .filter__heading, .container__heading {
