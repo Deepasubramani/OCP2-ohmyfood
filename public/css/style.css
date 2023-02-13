@@ -209,15 +209,24 @@ footer #footer__title {
   margin-bottom: 10px;
 }
 
-header {
-  text-align: center;
-  background-color: #fff;
-  height: 60px;
+.header {
+  height: 75px;
   width: 100%;
+  position: relative;
 }
-header .header__logo {
-  height: 50%;
-  padding: 15px;
+.header__back {
+  top: 50%;
+  position: absolute;
+  font-size: 25px;
+  padding: 5px 20px;
+  transform: translate(10px, -50%);
+}
+.header__logo {
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .search {
@@ -361,6 +370,37 @@ header .header__logo {
   line-height: 1.2;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+.menu__image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: #f6f6f6;
+}
+.menu__header {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.menu__dish {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 8px 20px -4px #d0d0d0;
+}
+.menu__dish--price {
+  align-self: flex-end;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

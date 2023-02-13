@@ -1,11 +1,22 @@
-header {
-    text-align: center;
-    background-color: $color-white;
-    height: 60px;
+.header {
+    height: 75px;
     width: 100%;
+    position: relative;
 
-    .header__logo {
-        height: 50%;
-        padding: 15px
+    &__back {
+        top: 50%;
+        position: absolute;
+        font-size: 25px;
+        padding: 5px 20px;
+        transform: translate(10px, -50%);
+
+    }
+
+    &__logo {
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
     }
 }

@@ -1,0 +1,39 @@
+.menu__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    background-color: $background-color;
+
+    &__header {
+        font-family: $header-fontfamily;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    &__list-item {}
+
+    &__dish {
+        background-color: $color-white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 8px 20px -4px darken($background-color, 15%);
+        &--price {
+            align-self: flex-end;
+            text-align: center;
+        }
+        &:hover{
+            
+        }
+    }
+
+    
+}
