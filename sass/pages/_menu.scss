@@ -1,3 +1,9 @@
+.background__image {
+
+    z-index: -1;
+    position: relative;
+}
+
 .menu__image {
     height: 200px;
     width: 100%;
@@ -5,16 +11,42 @@
 }
 
 .menu {
+    margin-top: -3rem;
     background-color: $background-color;
+    border-radius: 35px;
 
     &__header {
+        position: relative;
         font-family: $header-fontfamily;
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        padding: 30px 20px 20px;
+        .resturant__save-actions{
+            position: absolute;
+            top: 40%;
+            right: 6%;
+        }
     }
 
-    &__list-item {}
+    &__title {
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    &__underline::after {
+        content: "";
+        background-color: $Tertiary-text-color;
+        position: absolute;
+        height: 3px;
+        width: 35px;
+        margin-top: 5px;
+    }
+
+    &__list-item {
+        margin: 0px 20px;
+    }
 
     &__dish {
         background-color: $color-white;
@@ -24,16 +56,85 @@
         overflow: hidden;
         cursor: pointer;
         border-radius: 10px;
-        padding: 5px;
+        margin-bottom: 10px;
         box-shadow: 0 8px 20px -4px darken($background-color, 15%);
+       
+        $_num-dish: 5;
+        $_anim-dur: 2000ms;
+        $_anim-delay: calc($_anim-dur/$_num-dish);
+        animation: dish-appear $_anim-dur both;
+        @for $i from 1 through $_num-dish {
+            &--#{$i} {
+                animation-delay: $_anim-delay*$i;
+            }
+        }
+
+        &--name {
+            flex: none;
+            width: 75%;
+            padding: 10px;
+            transition: width 2s;
+        }
+
         &--price {
+            padding-bottom: 10px;
+            padding-right: 5px;
+            width: 25%;
+            flex: none;
             align-self: flex-end;
             text-align: center;
         }
-        &:hover{
-            
+
+        &:hover {
+            .menu__tick {
+                i {
+                    transform: rotate(0deg);
+                }
+            }
+
+            .menu__dish--name {
+                width: 70% !important;
+            }
+
+            .menu__dish--price {
+                width: 10%;
+            }
+        }
+
+        
+    }
+
+    &__tick {
+        color: $color-white;
+        background-color: $Tertiary-text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        flex: none;
+
+        i {
+            transform: rotate(-320deg);
+            transition: transform 2s ease-out;
         }
     }
 
-    
+
+}
+.form__submit{
+    width:150px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+@keyframes dish-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
 }

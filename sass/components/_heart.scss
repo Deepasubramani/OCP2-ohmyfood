@@ -1,5 +1,5 @@
 .resturant__save-actions{
-    position: relative;
+    
     font-size: 1.4rem;
     cursor: pointer;
     .heart__save-action{
@@ -25,7 +25,6 @@
     }
     .fas{
         display: block;
-        background: linear-gradient();
         background-clip: text;
         background: -webkit-linear-gradient($primary-text-color,$secondary-text-color);
         -webkit-background-clip: text;

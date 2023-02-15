@@ -19,20 +19,6 @@
         font-weight: 300;
     }
 
-    .info__button {
-        box-shadow: 0px 10px 20px 0 rgb(0 0 0 / 16%);
-        color: white;
-        background-color: $primary-text-color;
-        background-image: linear-gradient(175deg, $secondary-text-color, $primary-text-color);
-        border: none;
-        padding: 16px 24px;
-        border-radius: 50px;
-        &:hover {
-            background-image: linear-gradient(to bottom, lighten($secondary-text-color, 5%),
-                    lighten($primary-text-color, 2%));
-            box-shadow: 0px 5px 15px 0 rgb(0 0 0 / 20%);
-        }
-    }
 }
 
 .filter {
@@ -68,16 +54,18 @@
         justify-content: center;
         align-items: center;
     }
-    
-    &__icon{
+
+    &__icon {
         color: #7e7e7e;
         float: left;
         padding: 0px 30px;
-        
+
     }
+
     .icon--active {
         color: $primary-text-color !important;
     }
+
     & button {
         min-width: 150px;
         margin-bottom: 20px;
@@ -91,7 +79,7 @@
             font-family: $primary-fontfamily;
             float: left;
             position: relative;
-            top:-5px;
+            top: -5px;
         }
 
     }
@@ -102,6 +90,7 @@
     min-width: 200px;
     background-color: #f2f2f2;
     padding: 20px;
+
     .container__card {
         display: flex;
         flex-wrap: wrap;
@@ -147,9 +136,7 @@
         }
 
         .resturant__detail {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
+            position: relative;
             background-color: white;
             padding: 10px;
             line-height: 1.2;
@@ -157,5 +144,10 @@
             border-bottom-left-radius: 15px;
         }
 
+        .resturant__save-actions {
+            position: absolute;
+            bottom: 15%;
+            right: 5%;
+        }
     }
 }
