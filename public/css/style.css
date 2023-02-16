@@ -484,7 +484,7 @@ footer .footer__list a .fas {
   transform: rotate(0deg);
 }
 .menu__dish:hover .menu__dish--name {
-  width: 70% !important;
+  width: 65% !important;
 }
 .menu__dish:hover .menu__dish--price {
   width: 10%;
