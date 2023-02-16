@@ -21,7 +21,8 @@
         display: flex;
         justify-content: space-between;
         padding: 30px 20px 20px;
-        .resturant__save-actions{
+
+        .resturant__save-actions {
             position: absolute;
             top: 40%;
             right: 6%;
@@ -58,11 +59,12 @@
         border-radius: 10px;
         margin-bottom: 10px;
         box-shadow: 0 8px 20px -4px darken($background-color, 15%);
-       
+
         $_num-dish: 5;
         $_anim-dur: 2000ms;
         $_anim-delay: calc($_anim-dur/$_num-dish);
         animation: dish-appear $_anim-dur both;
+
         @for $i from 1 through $_num-dish {
             &--#{$i} {
                 animation-delay: $_anim-delay*$i;
@@ -74,6 +76,12 @@
             width: 75%;
             padding: 10px;
             transition: width 2s;
+
+            P {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
 
         &--price {
@@ -101,7 +109,7 @@
             }
         }
 
-        
+
     }
 
     &__tick {
@@ -121,8 +129,9 @@
 
 
 }
-.form__submit{
-    width:150px;
+
+.form__submit {
+    width: 150px;
     position: relative;
     left: 50%;
     right: 50%;
@@ -134,7 +143,7 @@
 
 @keyframes dish-appear {
     0% {
-        opacity: 0;
+        // opacity: 0;
         transform: translateY(10px);
     }
 }

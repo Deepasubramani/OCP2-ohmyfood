@@ -11,5 +11,12 @@ footer {
     }
     .footer__list a{
       color: $color-white;
+      .fa-handshake{
+        transform: rotate(320deg);
+      }
+      .fas{
+        width: 15px;
+        padding-right:5px;
+      }
     }
   }

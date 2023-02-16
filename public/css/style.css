@@ -26,12 +26,16 @@ a {
   font-size: 1.1rem;
 }
 
-.restaurant__byline, .info__byline {
+.restaurant__byline, .info__byline, .menu__dish--name p {
   font-weight: 300;
 }
 
 .info__button, .search__title, .filter_content, filter li {
   font-size: 1rem;
+}
+
+footer .fas {
+  font-size: 0.8rem;
 }
 
 .filter__order {
@@ -223,6 +227,13 @@ footer #footer__title {
 }
 footer .footer__list a {
   color: #fff;
+}
+footer .footer__list a .fa-handshake {
+  transform: rotate(320deg);
+}
+footer .footer__list a .fas {
+  width: 15px;
+  padding-right: 5px;
 }
 
 .header {
@@ -456,6 +467,11 @@ footer .footer__list a {
   padding: 10px;
   transition: width 2s;
 }
+.menu__dish--name P {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu__dish--price {
   padding-bottom: 10px;
   padding-right: 5px;
@@ -499,7 +515,6 @@ footer .footer__list a {
 
 @keyframes dish-appear {
   0% {
-    opacity: 0;
     transform: translateY(10px);
   }
 }

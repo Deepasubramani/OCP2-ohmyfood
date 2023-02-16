@@ -13,11 +13,14 @@ a{
 .restaurant__byline, .restaurant__heading, .info__byline{
     font-size: 1.1rem;
 }
-.restaurant__byline, .info__byline{
+.restaurant__byline, .info__byline,.menu__dish--name p{
     font-weight: 300;
 }
 .info__button, .search__title, .filter_content, filter li{
     font-size: 1rem;
+}
+footer .fas{
+    font-size: 0.8rem;
 }
 .filter__order{
     font-size: 0.9rem;
