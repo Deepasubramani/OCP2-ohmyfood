@@ -515,6 +515,7 @@ footer .footer__list a .fas {
 
 @keyframes dish-appear {
   0% {
+    opacity: 0;
     transform: translateY(10px);
   }
 }
