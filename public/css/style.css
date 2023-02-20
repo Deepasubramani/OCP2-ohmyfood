@@ -262,8 +262,19 @@ footer .footer__list a .fas {
   box-shadow: inset 0 5px 3px -3px #c4c4c4;
   padding: 15px;
 }
+.search__input {
+  padding-left: 70px;
+}
 .search__title {
-  padding-left: 7px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 20px;
+  border: none;
+  font-weight: 700;
+  color: #353535;
+  background-color: #eaeaea;
+}
+.search__title:focus {
+  outline: none;
 }
 
 .info__container {

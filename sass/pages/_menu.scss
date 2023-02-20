@@ -60,14 +60,14 @@
         margin-bottom: 10px;
         box-shadow: 0 8px 20px -4px darken($background-color, 15%);
 
-        $_num-dish: 5;
-        $_anim-dur: 2000ms;
-        $_anim-delay: calc($_anim-dur/$_num-dish);
-        animation: dish-appear $_anim-dur both;
+        $_number-of-dish: 5;
+        $_animation-duration: 2000ms;
+        $_animation-delay: calc($_animation-duration/$_number-of-dish);
+        animation: dish-appear $_animation-duration both;
 
-        @for $i from 1 through $_num-dish {
+        @for $i from 1 through $_number-of-dish {
             &--#{$i} {
-                animation-delay: $_anim-delay*$i;
+                animation-delay: $_animation-delay*$i;
             }
         }
 
