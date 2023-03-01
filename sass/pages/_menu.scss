@@ -11,10 +11,12 @@
 }
 
 .menu {
-    margin-top: -3rem;
+    margin-top: -3rem !important;
     background-color: $background-color;
-    border-radius: 35px;
-
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    max-width: 700px;
+    margin: auto;
     &__header {
         position: relative;
         font-family: $header-fontfamily;
@@ -72,12 +74,12 @@
         }
 
         &--name {
-            flex: none;
-            width: 75%;
+            flex: 1;
+            min-width: 200px;
             padding: 10px;
             transition: width 2s;
 
-            P {
+            P ,h4{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -87,25 +89,19 @@
         &--price {
             padding-bottom: 10px;
             padding-right: 5px;
-            width: 25%;
-            flex: none;
+            flex: 1;
             align-self: flex-end;
             text-align: center;
         }
 
         &:hover {
             .menu__tick {
+                width:50px;
+                transition: width 2s;
                 i {
+                    
                     transform: rotate(0deg);
                 }
-            }
-
-            .menu__dish--name {
-                width: 65% !important;
-            }
-
-            .menu__dish--price {
-                width: 10%;
             }
         }
 
@@ -116,9 +112,9 @@
         color: $color-white;
         background-color: $Tertiary-text-color;
         display: flex;
+        width:0px;
         justify-content: center;
         align-items: center;
-        width: 15%;
         flex: none;
 
         i {

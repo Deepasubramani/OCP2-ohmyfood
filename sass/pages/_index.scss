@@ -85,6 +85,7 @@
         width: 100%;
         border-radius: 20px;
         border: none;
+        filter: drop-shadow(0 5px 3px #dddddd);
 
         .filter_content {
             font-family: $primary-fontfamily;
@@ -96,10 +97,13 @@
     }
 
 }
-
-.resturant__container {
-    min-width: 200px;
+.container{
     background-color: #f2f2f2;
+}
+.resturant__container {
+    max-width: 700px;
+    min-width: 200px;
+    margin:auto;
     padding: 20px;
 
     .container__card {
@@ -108,7 +112,6 @@
         gap: 20px;
         flex-direction: row;
         padding: 20px 3rem !important;
-
         @include media-query(medium) {
             padding: 20px 0px !important;
         }
@@ -117,7 +120,9 @@
         margin: 0;
 
         & li {
-            min-width: 300px;
+            border-radius: 15px;
+            min-width: 250px;
+            box-shadow: 0 8px 20px -4px #d0d0d0;
             flex: 1;
         }
 

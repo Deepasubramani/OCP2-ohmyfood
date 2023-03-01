@@ -333,6 +333,7 @@ footer .footer__list a .fas {
   width: 100%;
   border-radius: 20px;
   border: none;
+  filter: drop-shadow(0 5px 3px #dddddd);
 }
 .filter button .filter_content {
   font-family: "Roboto", sans-serif;
@@ -341,9 +342,14 @@ footer .footer__list a .fas {
   top: -5px;
 }
 
-.resturant__container {
-  min-width: 200px;
+.container {
   background-color: #f2f2f2;
+}
+
+.resturant__container {
+  max-width: 700px;
+  min-width: 200px;
+  margin: auto;
   padding: 20px;
 }
 .resturant__container .container__card {
@@ -361,7 +367,9 @@ footer .footer__list a .fas {
   }
 }
 .resturant__container .container__card li {
-  min-width: 300px;
+  border-radius: 15px;
+  min-width: 250px;
+  box-shadow: 0 8px 20px -4px #d0d0d0;
   flex: 1;
 }
 .resturant__container .container__card img {
@@ -412,9 +420,12 @@ footer .footer__list a .fas {
 }
 
 .menu {
-  margin-top: -3rem;
+  margin-top: -3rem !important;
   background-color: #f6f6f6;
-  border-radius: 35px;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  max-width: 700px;
+  margin: auto;
 }
 .menu__header {
   position: relative;
@@ -473,12 +484,12 @@ footer .footer__list a .fas {
   animation-delay: 2000ms;
 }
 .menu__dish--name {
-  flex: none;
-  width: 75%;
+  flex: 1;
+  min-width: 200px;
   padding: 10px;
   transition: width 2s;
 }
-.menu__dish--name P {
+.menu__dish--name P, .menu__dish--name h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -486,27 +497,24 @@ footer .footer__list a .fas {
 .menu__dish--price {
   padding-bottom: 10px;
   padding-right: 5px;
-  width: 25%;
-  flex: none;
+  flex: 1;
   align-self: flex-end;
   text-align: center;
 }
+.menu__dish:hover .menu__tick {
+  width: 50px;
+  transition: width 2s;
+}
 .menu__dish:hover .menu__tick i {
   transform: rotate(0deg);
-}
-.menu__dish:hover .menu__dish--name {
-  width: 65% !important;
-}
-.menu__dish:hover .menu__dish--price {
-  width: 10%;
 }
 .menu__tick {
   color: #fff;
   background-color: #99E2D0;
   display: flex;
+  width: 0px;
   justify-content: center;
   align-items: center;
-  width: 15%;
   flex: none;
 }
 .menu__tick i {
